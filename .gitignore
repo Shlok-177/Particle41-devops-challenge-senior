@@ -5,3 +5,4 @@ simple-time-service/package-lock.json
 terraform-azure/.terraform
 .terraform.lock.hcl
 terraform.tfstate.backup
+terraform-azure/terraform.tfstate

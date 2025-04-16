@@ -1,67 +1,15 @@
-# 🚀 Particle41 DevOps Challenge – Simple Time Service
+# Simple Time Service
 
-Welcome! This repository contains a complete solution for deploying a simple containerized Node.js service to **Azure Container Apps** using **Terraform**. The project is structured in two key parts:
-
----
-
-## 📁 Repository Structure
-
-```bash
-PRACTICLE41/
-├── simple-time-service/        # Node.js backend service
-│   └── README.md               # App-specific deployment & run guide
-│
-├── terraform-azure/            # Infrastructure as Code (IaC) using Terraform
-│   └── README.md               # Detailed infra setup guide
-│
-└── README.md                   # ← You are here (main guide)
-```
+This project contains a CICD of simple Dockerized application that returns the current time.
 
 ---
 
-## 🧭 Getting Started
-
-To get the full solution running:
-
-1. **Deploy or update the Node.js app**:
-   - Navigate to `simple-time-service/`
-   - Follow the app-specific `README.md` to build, test, or containerize the application.
-
-2. **Start with the Terraform setup**:
-   - Navigate to `terraform-azure/`
-   - Follow the instructions in `terraform-azure/README.md` to deploy the infrastructure.
-   - ⚠️ *Note*: The **Azure Container App** resource takes around **15-20 minutes** to provision. This is expected behavior.
+This `ExtraCredit` branch contains the **Extra Credit!** feature.  
+I have created a CI/CD pipeline that builds the Docker image of our app and deploys it to Docker Registry.
 
 ---
 
-## 📌 Important Notes
+## Steps to create the CI/CD pipeline:
 
-- This project uses **Azure Container Apps**, **VNet**, and optionally **Azure Front Door** to expose and scale the service securely.
-- All resource provisioning is done using Terraform, with a modular, clean structure.
-
----
-
----
-
-## 📌 Deployment Timing Notes
-
-| Component             | Delay                          | Notes                                                                 |
-|----------------------|-------------------------------|-----------------------------------------------------------------------|
-| Azure Container App   | ⏳ 15–20 minutes               | Initial provisioning takes time. Please wait before troubleshooting. |
-| Azure Front Door      | ⏳ 2–5 minutes                 | Changes or provisioning might take a few minutes to reflact after creation of frontdoor so please wait before taking any decision😄 |
-
----
-
-## 📂 Individual Project Guides
-
-| Component            | Path                         | Description                                  |
-|----------------------|------------------------------|----------------------------------------------|
-| Node.js Service      | `simple-time-service/`       | App code, Dockerfile, and run instructions   |
-| Terraform IaC        | `terraform-azure/`           | Azure infrastructure setup with Terraform    |
-
----
-
-## 👨‍💻 Author
-
-DevOps Engineer – *Shlok Jadeja*  
-
+1. Created a `.github/workflows/docker-build.yml` file.
+2. Configured it to build the Docker image and push it to Docker Registry on each commit.
