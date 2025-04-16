@@ -41,6 +41,17 @@ To get the full solution running:
 
 ---
 
+---
+
+## 📌 Deployment Timing Notes
+
+| Component             | Delay                          | Notes                                                                 |
+|----------------------|-------------------------------|-----------------------------------------------------------------------|
+| Azure Container App   | ⏳ 15–20 minutes               | Initial provisioning takes time. Please wait before troubleshooting. |
+| Azure Front Door      | ⏳ 2–5 minutes                 | Changes or provisioning might take a few minutes to reflact after creation of frontdoor so please wait before taking any decision😄 |
+
+---
+
 ## 📂 Individual Project Guides
 
 | Component            | Path                         | Description                                  |
