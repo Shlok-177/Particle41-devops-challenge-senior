@@ -1,4 +1,3 @@
-```markdown
 # 🚀 Particle41 DevOps Challenge – Simple Time Service
 
 Welcome! This repository contains a complete solution for deploying a simple containerized Node.js service to **Azure Container Apps** using **Terraform**. The project is structured in two key parts:
@@ -54,3 +53,4 @@ To get the full solution running:
 ## 👨‍💻 Author
 
 DevOps Engineer – *Shlok Jadeja*  
+
