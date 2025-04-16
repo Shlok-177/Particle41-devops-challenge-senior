@@ -1,0 +1,6 @@
+location              = "East US"
+resource_group_name = "simple-time-service"
+plan_name             = "simple-time-service-app-plan"
+container_image       = "shlokjadeja/simple-time-service:latest"
+storage_account_name  = "stsstorageacc177"
+container_app_name = "simple-time-service-app"

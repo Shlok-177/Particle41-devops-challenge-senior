@@ -1,0 +1,6 @@
+variable "location" {}
+variable "plan_name" {}
+variable "container_image" {}
+variable "storage_account_name" {}
+variable "resource_group_name" {}
+variable "container_app_name" {}

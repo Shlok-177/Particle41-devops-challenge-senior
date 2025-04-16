@@ -41,12 +41,12 @@ docker build -t simple-time-service .
 ### 3. Run the Docker Container
 
 ```bash
-docker run -p 3000:3000 simple-time-service
+docker run -p 8080:8080 simple-time-service
 ```
 
 ### 4. Test the Service
 
-Visit: [http://localhost:3000](http://localhost:3000)
+Visit: [http://localhost:8080](http://localhost:3000)
 
 You should receive a response like this:
 
