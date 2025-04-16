@@ -1,4 +1,4 @@
-# Simple Time Service
+# Extra Credit Feature
 
 This project contains a CICD of simple Dockerized application that returns the current time.
 
