@@ -28,7 +28,7 @@ This project is part of the [Particle41 DevOps Team Challenge](https://particle4
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/<your-username>/simple-time-service.git
+git clone https://github.com/Shlok-177/Particle41-devops-challenge-senior.git
 cd simple-time-service
 ```
 
@@ -46,7 +46,7 @@ docker run -p 8080:8080 simple-time-service
 
 ### 4. Test the Service
 
-Visit: [http://localhost:8080](http://localhost:3000)
+Visit: [http://localhost:8080](http://localhost:8080)
 
 You should receive a response like this:
 
